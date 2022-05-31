@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Film Inventory</title>
+<link rel="stylesheet" href="css/styles.css"/>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery-utils.js"></script>
+<script src="scripts/ajax-utils.js"></script>
+</head>
+<body>
+	<h1 class="title">Film Inventory Controller</h1>
+		<div id="main-div">
+		<br/>
+			<fieldset>
+  				<legend>Get All Films</legend>
+  					<form id="getAllFilms-form" action="#">
+   						<label>Data Type</label>
+   						<select id="dataType">
+					     <option value="xml">XML</option>
+					     <option value="json">JSON</option>
+					     <option value="string">Text (String)</option>
+    					</select>
+						<br/>
+						<br/>
+  						<input type="button" value="Get all films" id="getAllFilms-button"/>
+   					</form>
+   					<br/>
+					<input type="button" value="Hide List" id="showHide-button1"/>
+   					<br/>
+  					<div id="results-region-1"></div> 
+			</fieldset>
+			<br/>
+			<fieldset>
+  				<legend>Get Film(s) from search</legend>
+  					<form id="searchFilms-form">
+    					<label>Enter search word(s):</label> 
+    					<input type="text" name="searchWord"/><br/>
+    					<br/>
+    					<label>Data Type</label>
+						<select id="dataType">
+					     <option value="xml">XML</option>
+					     <option value="json">JSON</option>
+					     <option value="string">Text (String)</option>
+    					</select>
+   						<br/>
+   						<br/>
+    					<input type="button" value="Find film" id="searchFilms-button"/>
+    				</form>
+  					<br/>
+   					<input type="button" value="Hide List" id="showHide-button2"/>
+   					<br/>
+    				<div id="results-region-2"></div>
+			</fieldset>
+			<br/>
+			<fieldset>
+  				<legend>Insert Film</legend>
+  					<form id="insertFilm-form">
+					    ID: <input type="number" name="id"/><br/>
+					    Title: <input type="text" name="title"/><br/>
+					    Year: <input type="number" name="year"/><br/>
+					    Director: <input type="text" name="director"/><br/>
+					    Stars: <input type="text" name="stars"/><br/>
+					    Review: <input type="text" name="review"/><br/>
+					    <br/>
+	    				<input type="button" value="Insert film" id="insertFilm-button"/>
+	    				<br/>
+	    				<br/>
+	    				<div id="results-region-3"></div>
+  					</form>
+			</fieldset>
+			<br/>
+			<fieldset>
+  				<legend>Update Film</legend>
+  					<form id="updateFilm-form">
+					    ID<input type="number" name="id"/><br/>
+					    Title: <input type="text" name="title"/><br/>
+					    Year: <input type="number" name="year"/><br/>
+					    Director: <input type="text" name="director"/><br/>
+					    Stars: <input type="text" name="stars"/><br/>
+					    Review: <input type="text" name="review"/><br/>
+					    <br/>
+	    				<input type="button" value="Update film" id="updateFilm-button"/>
+	    				<br/>
+	    				<br/>
+	    				<div id="results-region-4"></div>
+  					</form>
+			</fieldset>
+			<br/>
+			<fieldset>
+  				<legend>Delete Film</legend>
+  					<form id="deleteFilm-form">
+					    ID<input type="number" name="id"/><br/>
+					    <br/>
+	    				<input type="button" value="Delete film" id="deleteFilm-button"/>
+	    				<br/>
+	    				<br/>
+	    				<div id="results-region-5"></div>
+  					</form>
+			</fieldset>
+</div></body></html>
